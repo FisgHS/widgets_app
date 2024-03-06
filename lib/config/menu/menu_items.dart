@@ -11,11 +11,12 @@ class MenuItem{
     required this.title, 
     required this.subTitle, 
     required this.link, 
-    required this.icon});
+    required this.icon
+  });
 
 }
 
-const appMenuItems = <MenuItem> {
+const appMenuItems = <MenuItem> [
 
   MenuItem(
     title: 'Botones', 
@@ -31,4 +32,4 @@ const appMenuItems = <MenuItem> {
     icon: Icons.credit_card
   ),
 
-};
+];
