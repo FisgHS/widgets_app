@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class UiControlScreen extends StatelessWidget {
 
-  static const name = 'animated_screen';
+  static const name = 'ui_controlls_screen';
 
   const UiControlScreen({super.key});
 
