@@ -35,15 +35,31 @@ class _CardsView extends StatelessWidget {
       child: Column(
         children: [
           
+          // Todo: Extract this widget
+          const Padding(
+            padding: EdgeInsets.fromLTRB(10, 10, 10, 10), 
+            child: Align(
+              alignment: Alignment.centerLeft, 
+              child: Text( 
+                'Cards Elevation',
+                style: TextStyle(
+                  fontSize: 20
+                ), 
+              ),
+            )
+          ),
           ...cards.map(
             (card) => _CardType1(label: card['label'], elevation: card['elevation']),
             ),
+          const SizedBox(height: 30,),
           ...cards.map(
             (card) => _CardType2(label: card['label'], elevation: card['elevation']),
             ),
+          const SizedBox(height: 30,),
           ...cards.map(
             (card) => _CardType3(label: card['label'], elevation: card['elevation']),
             ),
+          const SizedBox(height: 30,),
           ...cards.map(
             (card) => _CardType4(label: card['label'], elevation: card['elevation']),
             ),
